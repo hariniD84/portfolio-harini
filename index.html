@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Harini, Portfolio </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="images/profile.jpeg" alt="Harini Dhanush Easwar">
+            </div>
+            <h1>Hi, I'm <span class="highlight">Harini Dhanush Easwar</span></h1>
+            <p class="typing-text">Data Analyst and Web developer <span class="typed-text"></span></p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary-btn">Contact Me</a>
+                <a href="#projects" class="btn secondary-btn">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Data Analyst Specialist with a knack for 
+                    interpreting complex datasets and utilizing analytical
+                     skills to drive company growth and efficiencies.</p>
+                <p>I take pride in my achievements, including 
+                    certifications in cloud computing and AI, 
+                    and I actively engage in projects and 
+                    workshops to expand my knowledge and experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-wordpress"></i>
+                <h3>Wordpress</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-microsoft"></i>
+                <h3>Microsoft</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/project1.jpeg" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Smart Evaluation System for 
+                        Handwritten Exam Responses Using 
+                        Tesseract and Large Language 
+                        Models</h3>
+                    <p>•It extracts text with Tesseract 
+                        OCR enhances accuracy with 
+                        LLaMA 3.1, and analyzes 
+                        responses using BERT and 
+                        LLaMA 3.1 for meaning – 
+                        based grading.</p>
+                    <p>•This ensures fair evaluation, 
+                        partial credit scoring and 
+                        detailed feedback.</p>
+                    <div class="project-links">
+                        <a href="https://logesh.pythonanywhere.com/" class="btn">View Demo</a>
+                        <a href="https://github.com/hariniD84" class="btn">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/project2.jpg" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Personal Blog on IBM Cloud Static 
+                        Web Apps</h3>
+                    <p>•A personal blog showcasing 
+                        creative writing and various topics</p>
+                    <p>• Developed a personal blog utilizing IBM 
+                        Cloud Static Web Apps</p>
+                    <div class="project-links">
+                        <a href="https://github.com/hariniD84/Personal-Blog" class="btn">View Demo</a>
+                        <a href="https://github.com/hariniD84/Personal-Blog" class="btn">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/hariniD84" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/harini-dhanush-490197285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/HariniDhanush?t=cBBBz4Vl3vMWMpmp1zDCwQ&s=08" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/_hari_n_17_?utm_source=qr&igsh=YzJoZ3Y4Ynh6a3Yz"class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
